@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+#otp_generation_container,#otp_container{
+    width: 30vw;
+    height: 40vh;
+    background-color: black;
+    position: absolute ;
+    top: 27.5vh;
+    left: 35vw;
+    border-radius: 3vw;
+}
+.inputs{
+    width: 27.5vw;
+    font-size: 2.5vw;
+    font-family: ProductSans;
+    margin-top: 2.5vh;
+    margin-left: 1.25vw;
+    outline: none;
+    border: none;
+}
+#validate_otp_button{
+    color: black;
+    background-color: lawngreen;
+}
+#generate_otp_button{
+    color: white;
+    background-color: red;
+    text-shadow: 0.2vw 0.2vw 0.2vw black;
+}
+#otp_inputbox{
+    color: white;
+    margin-top: 11vh;
+    background-color: transparent;
+    border-bottom: 0.2vw solid lightblue;
+}
+#otp_inputbox::placeholder{
+    color: lightblue;
+}
+.input_buttons{
+    transition: transform 125ms;
+    border-radius: 0.75vw;
+}
+#otp_heading{
+    color: lightblue;
+    font-size: 3.5vw;
+    font-family: ProductSans;
+    /* text-align: center;  when position is absolute text align not work */
+    position: absolute;
+    left: 2.5vw;
+    top: 0.5vh;
+    /* margin cannot taken in negative values but padding can taken */
+}
+#otp{
+    color: white;
+    font-size: 8vw;
+    /* position: relative; */
+    top: 10vh;
+    left: 3vw;
+}
+#close_button{
+    font-size: 3vw;
+    color: red;
+    font-weight: bolder;
+    padding: 0vw 0.9vw;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotateZ(45deg);    /* in inline elements transformation doesn't work */
+    display: inline-block;
+    /* position: relative;     if position is relative after removing otp close button changes its posittion*/ 
+    top: -2vh;
+    left: 27vw;
+    cursor: pointer;
+    transition: transform 1s;
+}
+#close_button:hover{
+    transform: rotateZ(764deg);
+}
+#otp_container{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.35vw);
+    display: none;
+}
+.positioning{
+    position: absolute;
+    /* cursor: pointer; */
+}
+.inputs:active{
+    transform: scale(0.95);
+}
+#close_button:hover{
+    background-color: red;
+    color: white;
+}
+#validation_statement_container{
+    color: lawngreen;
+    position: relative;
+    top: 0.5vw;
+    left: 8.5vw;
+    font-family: ProductSans;
+}
+@font-face { 
+    font-family: ProductSans;
+    src: url(../../assests/fonts/ProductSansRegular.ttf);
+}
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTPGeneration</title>
+    <script src="OTPGeneration.js" defer></script>
+    <link rel="stylesheet" href="OTPGeneration.css">
+</head>
+<body>
+    <div id="otp_generation_container">
+        <h1 id="otp_heading">OTPGeneration</h1>
+        <input type="text" name="" id="otp_inputbox" placeholder="EnterOTP" class="inputs">
+        <br>
+        <button id="validate_otp_button" class="inputs input_buttons">ValidateOTP</button>
+        <br>
+        <button id="generate_otp_button" class="inputs input_buttons">GenerateOTP</button>
+        <span id="validation_statement_container"></span>
+    </div>
+    <div id="otp_container">
+        <span id="otp" class="positioning"></span>    
+        <!-- in span width and heigt are not going to work -->
+        <span id="close_button" class="positioning">+</span>
+    </div>
+</body>
+</html>
